@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f3f5f9;
+}
+
+.tab{
+    float: left;
+    border: 1px solid #ccc;
+    background: #0000ff;
+    width: 20%;
+    height: 100vh;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+}
+
+h3{
+    font-size: 26px;
+    color: burlywood;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.tab button{
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab button:hover{
+    background: lightblue;
+}
+
+.tab button.active{
+    background:darkcyan;
+}
+
+.tabcontent{
+    float: left;
+    padding: 0px 12px;
+    height: 100vh;
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+#Skills li{
+    list-style-position: inside;
+}
+
+h2{
+    font-size: 38px;
+    font-weight: bold;
+    padding: 10px;
+    color: darkblue
+}
