@@ -9,6 +9,17 @@ body{
     background: #f3f5f9;
 }
 
+.dwnld{
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 28px;
+}
+
+.dwnld:hover{
+    cursor: pointer;
+}
+
 .tab{
     float: left;
     border: 1px solid #ccc;
@@ -92,3 +103,4 @@ h2{
         width: 100%;
     }
 }
+
