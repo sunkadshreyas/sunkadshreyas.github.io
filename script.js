@@ -1,16 +1,18 @@
-
-function openPage(event,Page){
-    var i,contents,links;
-    contents = document.getElementsByClassName("tabcontent");
-    for(i=0;i<contents.length;i++){
-        contents[i].style.display = "none";
+  
+  
+  
+  
+function openPage(event,tab){
+    var i;
+    var x = document.getElementsByClassName("tabcontent")
+    for(i=0;i<x.length;i++){
+      x[i].style.display = "none";
     }
-    links = document.getElementsByClassName("tablinks");
+    document.getElementById(tab).style.display = "block";
+    links = document.getElementsByClassName("item");
     for(i=0;i<links.length;i++){
         links[i].className = links[i].className.replace("active","");
     }
-    document.getElementById(Page).style.display = "block";
     event.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
+  }
+  document.getElementById("defaultOpen").click()
