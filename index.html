@@ -1,70 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="script.js" defer></script>
+  <title>Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="tab">
-        <center><img src="res/avatar.png"></center>
-        <h3><center>Shreyas.S</center></h3>
-        <button class="tablinks" onclick="openPage(event,'About')" id="defaultOpen">About</button>
-        <button class="tablinks" onclick="openPage(event,'Education')">Education</button>
-        <button class="tablinks" onclick="openPage(event,'Projects')">Projects</button>
-        <button class="tablinks" onclick="openPage(event,'Skills')">Skills</button>
-        <button class="tablinks" onclick="openPage(event,'Contact')">Contact</button>
+
+
+<div class="main-page">
+  <nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Shreyas.S</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <button class="item active" id="defaultOpen" href="#home" onclick="openPage(event,'home')">Home</button>
+          <button class="item" href="#projects" onclick="openPage(event,'projects')">Projects</button>
+          <button class="item" href="#interests" onclick="openPage(event,'interests')">Interests</button>
+          <button class="item" href="#contacts" onclick="openPage(event,'contacts')">Contact</button>
+        </ul>
+      </div>
     </div>
-    <div id="About" class="tabcontent">
-        <h2>About Me</h2><br><br>
-        <p>Hi! I am Shreyas.S</p>
-        <p>I am currently pursuing my Undergraduate Studies in Computer Science and Engineering at RVCE</p>
-        <p>I reside in Bengaluru</p><br><br>
-        <a href="res/Resume.pdf" download><button class="dwnld">Resume&nbsp;&nbsp;<i class='fas fa-download'></i></button> </a>
+  </nav>
+    
+  <div class="container content">
+    <div class="container home-page tabcontent" id="home">
+        <p>
+          <h2><b>About Me</b></h2>
+          Hi! I am Shreyas<br/>
+          I am a 2nd year Undergrad pursuing Computer Science.<br/>
+          I currently reside in Bangalore, India<br/>
+          I love solving problems with code, Learning about New Tech.<br/>
+          I am interested in AI areas like Deep Learning , JS famework : ReactJS <br/>and playing with images using OpenCV.<br/>
+        </p><br/>
+        <p>
+          <h2><b>Education</b></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Course</th>
+                <th scope="col">College</th>
+                <th scope="col">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">BE</th>
+                <td>RVCE</td>
+                <td>9.56 (IV Sem)</td>
+              </tr>
+              <tr>
+                <th scope="row">Pre Univeristy</th>
+                <td>DCFL</td>
+                <td>94.83</td>
+              </tr>
+              <tr>
+                <th scope="row">Higher Secondary</th>
+                <td>RNS Vidyaniketan</td>
+                <td>95.17</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
     </div>
-    <div id="Education" class="tabcontent">
-        <h2>Education</h2><br><br>
-        <p>B.E Computer Science and Engineering<br>R.V College of Engineering<br>Second Year
-        <br>Current CGPA : 9.56</p><br>
-        <p>Pre-University<br>Deeksha Centre for Learning PU College<br>
-        Karnataka State Board<br>Percentage : 94.87</p><br>
-        <p>Higher Secondary Education<br>RNS Vidyaniketan<br>ICSE Board<br>Percentage : 95.17<br></p>
+    <div style="display: none;" class="container about-page tabcontent" id="projects">
+        <h2><b>Projects </b></h2><br />
+        <p>
+          <b>Image Classification using TensorFlow 2.0</b><br/>
+          CNN to recognize pictures of dogs and cats.<br/>
+          Used Image Augmentation on input images.<br />
+        </p><br/>
+        <p>
+          <b>Machine Learning Project : Breat Cancer Detection</b><br/>
+          Used ML algorithms like SVM and KNN from sklean library.<br/>
+          Trained two models to detect cells as cancerous or not.<br/>
+        </p><br/>
+        <p>
+          <b>Machine Learning Project : Predicting Reviews of Games</b><br/>
+          Used ML algorithms like Linear and Random Forest model.<br/>
+          Regression technique to find the ratings given by users.<br/>
+        </p><br/>
+        <p>
+          <b>Cross Platform Weather App</b><br/>
+          App showing temperature,humidity and description of various cities.<br/>
+          Written in React native Framework using OpenWeather API.<br/>
+        </p><br/>
+        <p>
+          <b>OCR Number Plate Detector</b><br/>
+          Using Java and Tesseract API to read number plates<br/>
+          Added GUI effects using JavaFX library.<br>
+        </p>
     </div>
-    <div id="Projects" class="tabcontent">
-        <h2>Projects</h2><br>
-        <p>Neural Network using Tensorflow 2.0 : Fashion MNIST Dataset</p>
-        <p>Number Plate Detection using Tesseract OCR in Java with JavaFX</p>
-        <p>React Projects : ToDoApp using React, Counter using Redux</p>
-        <p>Machine Learning Project-Board Game Review Prediction using Linear Model and Random Forest Regression</p>
-        <p>Basic Games and Utility Apps like Tic-Tac-Toe, Calculator using Android studio in Java</p>
-        <p>Machine Learning Project-Breast Cancer Detection using KNN and SVM using Jyputer Notebooks.</p> 
-        <p>Text Editor and other utility apps like Calculator with Python Library Tkinter</p>
+    <div style="display: none;" class="container contact-page tabcontent" id="interests">
+      <h2><b>Skills</b></h2>
+      Deep Learning Framework : TensorFlow 2.0, Keras library<br/>
+      ML and Data Visualization Libraries : Sklearn, Matplotlib, Numpy<br/>
+      Version Control : GIT<br/>
+      Cross Platform App Development : React Native, Flutter<br/>
+      Javascript Library : ReactJS<br/>
+      Image Processing using OpenCV<br/>
+      Linux Operating System (Ubuntu distro) Primary OS<br/>
+      <h2><b>Languages</b></h2>
+      <ul>
+        <li>C , C++</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+      <h2><b>Courses</b></h2>
+      Neural Networks and Deep Learning by <a target="_blank" href="https://coursera.org/share/115f84644e9aa6ff3b3cee18c65a300a">Coursera</a><br/>
+      Convolutional Neural Networks by Coursera<br/>
+      Operating System by NPTEL IIT Madras ( Top 2% )<br/>
+      Python Programming, Data Structures and Algorithms by NPTEL IIT Madras ( Top 5% )<br/>
+  </div>
+    <div style="display: none;" class="container contact-page tabcontent" id="contacts">
+        <p><i class="fa icon fa-envelope">&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:shreyass.cs18@rvce.edu.in">shreyass.cs18@rvce.edu.in</a></i></p><br/>
+        <p><i class="fa icon fa-github-alt">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/sunkadshreyas">Github</a></i></p><br/>     
+        <p><i class="fa icon fa-linkedin-square">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.linkedin.com/in/shreyas-s-837486171/">LinkedIn</a></i></p><br/>
     </div>
-    <div id="Skills" class="tabcontent">
-        <h2>Skills</h2>
-        <p>Programming languages : C++,C,Java,Python </p>
-        <p>Javascript Framework : React JS</p>
-        <p>Front End : HTML,CSS,JavaScript</p>
-        <p>Machine Learning Algorithms</p>
-        <p>Cross Platform Apps using Flutter and Android using Android Studio</p><br><br>
-        <h2>Courses</h2>
-        <p>Neural Networks and Deep Learning by <a target="_blank" href="https://coursera.org/share/115f84644e9aa6ff3b3cee18c65a300a">Coursera</a>.</p>
-        <p>Programming ,Data Structures and Algorithms using Python NPTEL Course </p>
-        <p>Operating System NPTEL Course </p>
-    </div>
-    <div id="Contact" class="tabcontent">
-        <h2>Contact</h2><br><br>
-        <p><i class="fa fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;</i><a href="mailto:shreyass.cs18@rvce.edu.in">shreyass.cs18@rvce.edu.in</a></p><br>
-        <!--<p>Mobile : (+91)9731916585</p>-->
-        <p><i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;<a href="https://github.com/sunkadshreyas">Github Link</a></p><br>
-        <p><i class='fas fa-code'></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.codechef.com/users/stephenstrange">CodeChef Profile</a></p>
-    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+</script>
 </body>
 </html>
