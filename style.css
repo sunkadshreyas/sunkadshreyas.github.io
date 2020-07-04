@@ -51,6 +51,10 @@
     font-size: 3rem;
 }
 
+.contact-page>a{
+    color : blue;
+}
+
 @media (max-width : 825px){
     .tabcontent{
         font-size: 1.4rem;
