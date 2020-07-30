@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -26,11 +28,11 @@
         <a class="navbar-brand" href="#">Shreyas.S</a>
       </div>
       <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <button class="item active" id="defaultOpen" href="#home" onclick="openPage(event,'home')">Home</button>
-          <button class="item" href="#projects" onclick="openPage(event,'projects')">Projects</button>
-          <button class="item" href="#interests" onclick="openPage(event,'interests')">Interests</button>
-          <button class="item" href="#contacts" onclick="openPage(event,'contacts')">Contact</button>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button class="item active" id="defaultOpen" href="#home" onclick="openPage(event,'home')">Home</button></li>
+          <li><button class="item" href="#projects" onclick="openPage(event,'projects')">Projects</button></li>
+          <li><button class="item" href="#interests" onclick="openPage(event,'interests')">Interests</button></li>
+          <li><button class="item" href="#contacts" onclick="openPage(event,'contacts')">Contact</button></li>
         </ul>
       </div>
     </div>
@@ -42,9 +44,8 @@
           <h2><b>About Me</b></h2>
           Hi! I am Shreyas<br/>
           I am a 2nd year Undergrad pursuing Computer Science.<br/>
-          I currently reside in Bangalore, India<br/>
-          I love solving problems with code, Learning about New Tech.<br/>
-          I am interested in AI areas like Deep Learning , JS famework : ReactJS <br/>and playing with images using OpenCV.<br/>
+          I reside in Bangalore, India<br/>
+          I am interested in Deep Learning Tasks like Computer Vision and NLP.<br /> 
         </p><br/>
         <p>
           <h2><b>Education</b></h2>
@@ -58,8 +59,8 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">BE</th>
-                <td>RVCE</td>
+                <th scope="row">BE (CSE)</th>
+                <td>RV College of Engineering</td>
                 <td>9.56 (IV Sem)</td>
               </tr>
               <tr>
@@ -80,7 +81,7 @@
         <h2><b>Projects </b></h2><br />
         <p>
           <b>Diabetes Prediction Web App using ML and Flask</b><br/>
-          Used Random Forest Classifier to class a patient as positive or negative.<br/>
+          Used Random Forest Classifier to class a patient as diabetic or not.<br/>
           Integrated the model with Flask to make it as a Web App.<br>
         </p><br/>
         <p>
@@ -120,15 +121,16 @@
         <li>Java</li>
       </ul>
       <h2><b>Courses</b></h2>
-      Neural Networks and Deep Learning by Coursera.&nbsp;&nbsp;<a target="_blank" href="https://coursera.org/share/115f84644e9aa6ff3b3cee18c65a300a">View</a><br/>
-      Convolutional Neural Networks by Coursera.&nbsp;&nbsp;<a target="_blank" href="https://coursera.org/share/9393193ed0019c842d562e8f987a61ea">View</a><br/>
+      Deep Learning Specialization by Coursera.&nbsp;&nbsp;<a target="_blank" href="https://www.coursera.org/account/accomplishments/specialization/certificate/RL2JWMRJX6CA">View</a><br/>
+      &nbsp;&nbsp;<small> --  Deep Neural Nets, Convolutional Neural Nets, Recurrent Neural Nets</small><br/>
       Operating System by NPTEL IIT Madras ( Top 2% )<br/>
       Python Programming, Data Structures and Algorithms by NPTEL IIT Madras ( Top 5% )<br/>
   </div>
     <div style="display: none;" class="container contact-page tabcontent" id="contacts">
-        <p><i class="fa icon fa-envelope">&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:shreyass.cs18@rvce.edu.in">shreyass.cs18@rvce.edu.in</a></i></p><br/>
-        <p><i class="fa icon fa-github-alt">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/sunkadshreyas">Github</a></i></p><br/>     
-        <p><i class="fa icon fa-linkedin-square">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.linkedin.com/in/shreyas-s-837486171/">LinkedIn</a></i></p><br/>
+        <h2><b>Find Me On</b></h2><br/>
+        <i class="fa icon fa-envelope">&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:shreyass.cs18@rvce.edu.in">shreyass.cs18@rvce.edu.in</a></i><br/><br/>
+        <i class="fa icon fa-github-alt">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/sunkadshreyas">Github</a></i><br/><br/>     
+        <i class="fa icon fa-linkedin-square">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.linkedin.com/in/shreyas-s-837486171/">LinkedIn</a></i><br/><br/>
     </div>
   </div>
 </div>
