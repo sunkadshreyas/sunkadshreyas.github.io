@@ -1,6 +1,18 @@
+html, body {
+height: 100%;
+width: 100%;
+margin:0; /* new */
+}
+
+
+.main-page{
+margin-top : 3rem;
+}
+
+/*
 .main-page{
     max-width : 800px;
-    margin : auto;
+    margin : 0;
 }
 
 .navbar-light{
@@ -8,10 +20,12 @@
     margin-bottom: 7rem;
 }
 
+*/
 .navbar-brand{
     font-size: 4rem;
     color: black;
-    font-family: 'Red Rose', cursive;
+    font-family: 'Times New Roman';
+	padding-left : 6rem;
 }
 
 .navbar-nav{
@@ -38,25 +52,25 @@
 }
 
 .content{
-    font-size: 2rem;
+    font-size: 1.2em;
     line-height: 1.5;
 }
 
-.table{
-    max-width : 700px;
-    font-size: 1.7rem;
+#date{
+	float : right;
+	position : relative;
 }
 
 .icon>a{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .contact-page>a{
     color : blue;
 }
 
-.container>h2{
-    font-family: 'Roboto Mono', monospace;
+.container>h3{
+    font-family: 'Times New Roman', monospace;
 }
 
 @media (max-width : 825px){
