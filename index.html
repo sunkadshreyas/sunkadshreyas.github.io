@@ -1,146 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Resume</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyas Sunkad - Resume</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&family=Space+Mono&family=Poetsen+One&family=Reddit+Mono&family=IBM+Plex+Mono:wght@200..900&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'LXGW WenKai TC';
+      font-size: 17px;
+      font-weight: 590;
+      line-height: 1.6;
+    }
+    .portfolio-name {
+        font-family: 'Reddit Mono';
+    }
+    .container {
+      margin-top: 20px;
+      padding-bottom: 40px; /* Add padding at the end of the page */
+    }
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-family: 'Reddit Mono';
+    }
+    .section-heading {
+      font-weight: bold;
+    }
+    .contact-links {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+    .contact-links li {
+      margin-right: 20px;
+    }
+    .contact-links a {
+      margin-right: 15px;
+      color: inherit; /* Remove blue color from links */
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .portfolio-desc {
+      margin-left: 20px;
+      float: center;
+    }
+    .contact-links img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+    .project-link {
+      width: 15px;
+      height: 15px;
+    }
+    table {
+      background-color: transparent; /* Remove background from table */
+      border-collapse: collapse; /* Remove borders */
+    }
+    table, th, td {
+      border: none; /* Remove borders */
+    }
+    .experience .location {
+      font-size: 0.85em; /* Smaller font size for location */
+      float: right;
+    }
+    .education .location {
+      font-size: 0.85em; /* Smaller font size for location */
+      float: right;
+    }
+  </style>
 </head>
 <body>
-
-
-<div class="main-page">
-  <nav class="navbar navbar-toggleable-md navbar-light fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">Shreyas  S</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><button class="item active" id="defaultOpen" href="#home" onclick="openPage(event,'home')">Home</button></li>
-          <li><button class="item" href="#projects" onclick="openPage(event,'projects')">Projects</button></li>
-          <li><button class="item" href="#interests" onclick="openPage(event,'interests')">Interests</button></li>
-          <li><button class="item" href="#contacts" onclick="openPage(event,'contacts')">Contact</button></li>
-        </ul>
-      </div>
+  <div class="container">
+    <!-- Main Section -->
+    <div class="text-center">
+      <h1 class="portfolio-name">Shreyas Sunkad</h1>
+      <p class="portfolio-desc">
+        I am currently pursuing a Master's degree in Computer Science at the University of Illinois Urbana-Champaign (UIUC), with an expected graduation in May 2025.
+        I hold a Bachelor's degree in Computer Science and Engineering from RV College of Engineering (RVCE).
+        Professionally, I worked as a Backend Developer at Clumio, where I utilized technologies such as RDS, EC2, and Lambda to develop robust backup and recovery solutions for databases on the public cloud.
+        My main interests lie in Distributed Systems, Databases, and Cloud Systems, and I am passionate about solving real world complex problems using innovative technologies.
+      </p>
+      <nav>
+        <a href="#education">Education</a> |
+        <a href="#experience">Experience</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </nav>
-    
-  <div class="container content">
-    <div class="container home-page tabcontent" id="home">
+
+    <!-- Education Section -->
+    <div id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education">
+        <h5><span class="section-heading">University of Illinois,Urbana-Champaign</span><span class="location"> Champaign,Illinois</span></h5>
+        <p> Masters in Computer Science (MCS) <span class="float-right"> Jan 2024 - May 2025 </span></p>
         <p>
-          <h3><b>About Me</b></h3>
-          Hi! I am Shreyas S<br/>
-          Currently in 3rd year Undergrad pursuing Computer Science.<br/>
-          Residing in Bangalore, India.<br/>
-          Worked in domain of Computer Vision and React.<br />
-	  Interseted in learning new tech and building real world products !! <br/> 
-        </p><br/>
-        <p>
-          <h3><b>Education</b></h3>
-          	<div>
-			<p>
-				RV College of Engineering <span id="date"> Aug 2018 - May 2022 </span> </br> BE in Computer Science and Engineering. <strong>CGPA : 9.41</strong>
-			</p>
-			<hr>
-			<p>
-				Deeksha Center For Learning <span id="date"> 2018 </span> </br>  Pre University in Karnataka State Board. <strong>Percentage : 94.87</strong>
-			</p>
-			<hr>
-			<p>
-				RNS Vidyaniketan <span id="date"> 2016 </span> </br> Higher Secondary Education (10th) from ICSE Board <strong>Percentage : 95.17</strong>
-			</p>
-		</div>
-		<div></div>
-		<div></div>
+          <ul>
+            <li>Courses : Database Systems, Distributed Systems, Applied Machine Learning</li>
+            <li><strong>GPA: 4.0</strong></li>
+          </ul>
         </p>
+      </div>
+      <div class="education">
+        <h5><span class="section-heading">RV College of Engineering</span><span class="location"> Bangalore,India</span></h5>
+        <p> Bachelors in Computer Science and Engineering (BE-CSE) <span class="float-right"> Aug 2018 - May 2022 </span></p>
+        <p>
+          <ul>
+            <li>Courses : Data Structures & Algorithms, OS, Database Design, Computer Networks, AI & ML</li>
+            <li><strong>CGPA: 9.35</strong></li>
+          </ul>
+        </p>
+      </div>
     </div>
-    <div style="display: none;" class="container about-page tabcontent" id="projects">
-        <h3><b>Projects </b></h3><br />
+
+    <!-- Experience Section -->
+    <div id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience">
+        <h5><span class="section-heading">University of Illinois,Urbana-Champaign</span><span class="location"> Champaign,Illinois</span></h5>
+        <p> Course Assistant, CS411 Database Systems <span class="float-right"> May 2024 - Aug 2024 </span></p>
         <p>
-          <b><a>ISRO Internship Project : Segmentation of satellite imagery</a></b><br/>
-          Woked in a team to use deep learning based segmentation models for satellite images.<br/>
-	  Satellite images require additonal preprocessing such as splitting of multiple channels.<br/>
-          Made use of Base UNet architecture with ResNet backbone in Tensorflow framework.<br>
-        </p><br/>
+          <ul>
+            <li>
+              Monitoring and helping a batch of 200 students with their learning, along with course grading and testing/editing course contents. 
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="experience">
+        <h5><span class="section-heading">Clumio</span><span class="location"> Bengaluru,India</span></h5>
+        <p> Member of Technical Staff <span class="float-right"> Jun 2022 - Dec 2023 </span></p>
         <p>
-          <b><a>Automated Invoice Management System</a></b><br/>
-          Worked in  a team to develop  a system which scans and stores invoice data<br/>
-          Used a MySQL database to store details for various entities and MongoDB to store invoice detiails.<br/>
-	 Worked on parts of Flask web app, image preprocessing using OpenCV and deep learning methods for recognition.</br>
-        </p><br/>
-	 <p>
-          <b><a>Vocabulary MERN based web application</a></b><br/>
-          Developed a full stack web app with features such as Dictionary seach, Vocab Quiz and Bookmark my words.<br/>
-          Frontend in React to render web pages and connected to MongoDB to store words and user info.<br/>
-	  Used JSON web tokens for authentication and session handling.<br/>
-        </p><br/>
-         <p>
-          <b><a>Neural Machine Translation</a></b><br/>
-          Encoder Decoder Model to translate from English to Hindi.<br/>
-	 Used attention mechanism in order to improve long range dependencies<br/>
-          Used Tensorflow for training and testing of model.<br />
-        </p><br/>
+          <ul>
+            <li>
+              Added visibility for MS-SQL databases on EC2 using the FCI architecture. Integrated support for taking periodic backups and performing restores for FCI databases in the product
+            </li>
+            <li>
+              Enhancing MS-SQL on EC2 product with features such as Easy and Secure product on-boarding with Cloudformation templates, Performing Backups and Restores of AAG databases with secondary replicas, Custom SSM documents providing more flexibility to customers.
+            </li>
+            <li>
+              Introduced support for SCIM protocol, enabling customers to automate Identity Management by syncing user profiles and roles from various Identity Providers to Clumio
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="experience">
+        <h5><span class="section-heading">Clumio</span><span class="location"> Bengaluru,India</span></h5>
+        <p> Member of Technical Staff Intern <span class="float-right"> Jan 2022 - May 2022 </span></p>
         <p>
-          <b><a>Smart Diabetes Prediction</a></b><br/>
-          Machine Learning based web app to predict if a patient is diabetic based on various parameters.<br/>
-          Random Forest Algorithm is used in backend for performing the binary classification.<br/>
-          Used Flask to develop the frontend for taking in required parameters and showing the predictions.<br/>
-        </p><br/>
-     
-    
+          <ul>
+            <li>
+              Enhanced Record Retrieval mechanism for RDS with Lambda, Integrated Product Metering workflow into RDS, Modified RDS protection workflow to support backing up and restoring Option Groups attached to databases
+            </li>
+          </ul>
+        </p>
+      </div>
     </div>
-    <div style="display: none;" class="container skills-page tabcontent" id="interests">
-      <h3><b>Technical Skills</b></h3>
-      	<ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Languages : C, C++, Python, Java </li>
-          <li>Image Processing :  OpenCV</li>
-          <li>Web Development : ReactJS, Flask, HTML, CSS, JavaScript, NodeJS and ExpressJS</li> 
-          <li>Databases : MySQL, MongoDB</li>
-          <li>Machine Learning : Tensorflow, PyTorch, Numpy, Keras</li>
-        </ul>
-      <h3><b>Courses</b></h3>
-      500+ problems on <a href="https://leetcode.com/shreyas_s/">LeetCode</a> and <a href="{https://auth.geeksforgeeks.org/user/sunkadshreyas/practice">GeeksForGeeks</a>, 5* on <a href="https://www.hackerrank.com/stephen_strange">HackerRank.</a> <br/>
-      Deep Learning Specialization by Coursera.&nbsp;&nbsp;<a target="_blank" href="https://coursera.org/share/1b8dc38e72be08bddbc9589628c64d7a">View</a>
-      &nbsp;&nbsp;<br/>
-      Operating System by NPTEL IIT Madras <a href="https://drive.google.com/file/d/1sSjpUUiI7HVmm6HfX2MbJmwNzRcCb8OF/view?usp=sharing">( Top 5% )</a><br/>
-      Python Programming, Data Structures and Algorithms by NPTEL IIT Madras <a href="https://drive.google.com/file/d/1CkyIBPIaPXuyc2lS6naVKmSVr51A7JYY/view?usp=sharing">( Top 5% )</a><br/>
-      <a href="https://drive.google.com/file/d/1P96th2V0K068hMTOqkoha2d--Ssya5Zx/view?usp=sharing">Best project</a> under NLP category for Neural Machine Translation under RVCE-CoE. <br/> 
-  </div>
 
-    <div style="display: none;" class="container contact-page tabcontent" id="contacts">
-	
-        <h3><b>Find Me On</b></h3><br/>
-	<i class="fa icon fa-file-pdf-o">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://drive.google.com/file/d/1IVpNNGJ0f-xvE-cAcKKgmZk_H9DdpbMS/view?usp=sharing">Resume</a></i><br/><br/>
-        <i class="fa icon fa-envelope">&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:shreyass.cs18@rvce.edu.in">shreyass.cs18@rvce.edu.in</a></i><br/><br/>
-        <i class="fa icon fa-github-alt">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/sunkadshreyas">Github</a></i><br/><br/>     
-        <i class="fa icon fa-linkedin-square">&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.linkedin.com/in/shreyas-s-837486171/">LinkedIn</a></i><br/><br/>
-	
-   
-</div>
-  </div>
-</div>
+    <!-- Projects Section -->
+    <div id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project">
+        <h5 class="section-heading">Semantic Segmentation of Satellite Images <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <p> Python, ArcGIS, Tensorflow</p>
+        <p>
+          <ul>
+            <li>
+              Trained deep learning based segmentation models such as UNet,ResNet in order to identify various geographical entities in a satellite image for a research project under ISRO
+            </li>
+            <li>
+              Image Preprocessing and Mask Annotation was done using Python wrapper over ArcGIS. Employed Tensorflow for training the models
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="project">
+        <h5 class="section-heading">Automated Invoice Management System <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <p> Python, Flask, OpenCV, MySQL, MongoDB</p>
+        <p>
+          <ul>
+            <li>
+              Worked with a team to develop a machine learning-based web application for invoice data management. Leveraged OpenCV to identify various text regions in the invoice and OCR models in order to recognize characters in the text region
+            </li>
+            <li>
+              Implemented a web interface for end users using Flask. Stored Invoice Metadata in MySQL database and the actual invoice in MongoDB
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="project">
+        <h5 class="section-heading">Neural Machine Translation <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <p> Python, Tensorflow</p>
+        <p>
+          <ul>
+            <li>
+              Designed and implemented a deep learning-based model to translate sentences from English to Hindi. Developed an Encoder Decoder model for the translation. Employed Tensorflow for implementing and training the model.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
 
+    <!-- Skills Section -->
+    <div id="skills">
+      <h4 class="section-title">Technical Skills</h2>
+      <ul>
+        <li>
+          Languages: C++, Go, Python
+        </li>
+        <li>
+          Frameworks/Libraries: Tensorflow, Flask, Numpy
+        </li>
+        <li>
+          Cloud Technologies: AWS RDS, EC2, S3, Lambda
+        </li>
+        <li>
+          Software Development Tools: REST API Design, gRPC, Git
+        </li>
+      </ul>
+      <h4 class="section-title">Achievements</h2>
+      <ul>
+        <li>
+          Published a paper titled Automated Invoice Data Extraction using Image Processing in International Journal of Artificial Intelligence (IJ-AI) capturing the text detection and recognition pipeline built as part of the Automated Invoice Processing System
+        </li>
+        <li>
+          Recognized with the ”Best Project” accolade under the NLP category by RVCE-CoE for the Neural Machine Translation Project.
+        </li>
+      </ul>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-links">
+          <a target="_blank" href="https://drive.google.com/file/d/1Ii_OGbqOP0uuKkGxKPY4GIn5sjitrTx4/view?usp=share_link">
+            <img src="https://img.icons8.com/ios-filled/50/000000/resume.png" alt="Resume">
+            Resume
+          </a>
+          <a target="_blank" href="#">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+          <a target="_blank" href="#">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub">
+            GitHub
+          </a>
+          <a target="_blank" href="mailto:sunkad.shreyas@gmail.com">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email">
+            Email
+          </a>
+          <a target="_blank" href="#">
+            <img src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000" alt="Email">
+            LeetCode
+          </a>
+        </div>
+      </div>
+    </div>
 
-<script>
-</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
