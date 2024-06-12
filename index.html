@@ -8,7 +8,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&family=Space+Mono&family=Poetsen+One&family=Reddit+Mono&family=IBM+Plex+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=LXGW+WenKai+TC&display=swap&family=Public+Sans&family=Reddit+Mono&family=IBM+Plex+Mono:wght@200..900&display=swap" rel="stylesheet">
   
   <style>
     body {
@@ -18,16 +18,23 @@
       line-height: 1.6;
     }
     .portfolio-name {
-        font-family: 'Reddit Mono';
+        font-family: 'Itim';
+        font-size: 41px;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
     .container {
       margin-top: 20px;
       padding-bottom: 40px; /* Add padding at the end of the page */
+      margin: 0 auto;
+      width: 60%;  /* 100% - 20% left - 20% right = 60% */
+      background-color: white;
+      padding: 20px;
     }
     .section-title {
       margin-top: 40px;
       margin-bottom: 20px;
-      font-family: 'Reddit Mono';
+      font-family: 'Itim';
     }
     .section-heading {
       font-weight: bold;
@@ -42,7 +49,6 @@
     }
     .contact-links a {
       margin-right: 15px;
-      color: inherit; /* Remove blue color from links */
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -55,9 +61,6 @@
       width: 20px;
       height: 20px;
       margin-right: 8px;
-    }
-    .contact-links a:hover {
-      text-decoration: underline;
     }
     .project-link {
       width: 15px;
@@ -173,7 +176,7 @@
     <div id="projects">
       <h2 class="section-title">Projects</h2>
       <div class="project">
-        <h5 class="section-heading">Semantic Segmentation of Satellite Images <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <h5 class="section-heading">Semantic Segmentation of Satellite Images <a href="https://drive.google.com/file/d/1XiAzY7dJhH8zN5kjCIMZnWGQWOOgXgL0/view"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
         <p> Python, ArcGIS, Tensorflow</p>
         <p>
           <ul>
@@ -187,7 +190,7 @@
         </p>
       </div>
       <div class="project">
-        <h5 class="section-heading">Automated Invoice Management System <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <h5 class="section-heading">Automated Invoice Management System <a href="https://github.com/sunkadshreyas/AIMS"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
         <p> Python, Flask, OpenCV, MySQL, MongoDB</p>
         <p>
           <ul>
@@ -201,7 +204,7 @@
         </p>
       </div>
       <div class="project">
-        <h5 class="section-heading">Neural Machine Translation <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
+        <h5 class="section-heading">Neural Machine Translation <a href="https://github.com/sunkadshreyas/MachineTranslation"><img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link" class="project-link"></a></h5>
         <p> Python, Tensorflow</p>
         <p>
           <ul>
@@ -233,10 +236,12 @@
       <h4 class="section-title">Achievements</h2>
       <ul>
         <li>
-          Published a paper titled Automated Invoice Data Extraction using Image Processing in International Journal of Artificial Intelligence (IJ-AI) capturing the text detection and recognition pipeline built as part of the Automated Invoice Processing System
+          Published a paper titled Automated Invoice Data Extraction using Image Processing in International Journal of Artificial Intelligence 
+          <span class="github-link"><a href="https://ijai.iaescore.com/index.php/IJAI/article/view/21376">(IJ-AI)</a></span>
+          capturing the text detection and recognition pipeline built as part of the Automated Invoice Processing System
         </li>
         <li>
-          Recognized with the ”Best Project” accolade under the NLP category by RVCE-CoE for the Neural Machine Translation Project.
+          Recognized with the <a href="https://drive.google.com/file/d/1P96th2V0K068hMTOqkoha2d--Ssya5Zx/view">Best Project</a> accolade under the NLP category by RVCE-CoE for the Neural Machine Translation Project.
         </li>
       </ul>
     </div>
