@@ -8,20 +8,34 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Itim&family=LXGW+WenKai+TC&display=swap&family=Public+Sans&family=Reddit+Mono&family=IBM+Plex+Mono:wght@200..900&display=swap" rel="stylesheet">
   
   <style>
+    @font-face {
+        font-family: 'SFNSText';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src:url('./fonts/SFNSText-Regular.ttf');
+        /* src:url('./fonts/academicons.eot') format('embedded-opentype'),
+            url('./fonts/academicons.ttf') format('truetype'),
+            url('./fonts/academicons.woff') format('woff'),
+            url('./fonts/academicons.svg') format('svg'); */
+    }
     body {
-      font-family: 'Reddit Mono';
-      font-size: 17px;
-      font-weight: 590;
+      font-family: 'SFNSText';
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
       line-height: 1.6;
+      font-size: 18px;
     }
     .portfolio-name {
-        font-family: 'Itim';
-        font-size: 41px;
+        font-family: 'SFNSText';
         margin-bottom: 15px;
         margin-top: 10px;
+        font-weight: 900;
     }
     .container {
       margin-top: 20px;
@@ -34,7 +48,8 @@
     .section-title {
       margin-top: 40px;
       margin-bottom: 20px;
-      font-family: 'Itim';
+      font-family: 'SFNSText';
+      font-weight: 900;
     }
     .section-heading {
       font-weight: bold;
